@@ -15,9 +15,9 @@ const Card = (article) => {
 
   cDiv.appendChild(head)
   cDiv.appendChild(author)
-  author.appendChild(imgCon)
-  author.appendChild(img)
   author.appendChild(aName)
+  author.appendChild(imgCon)
+  imgCon.appendChild(img)
 
   head.textContent = article.headline
   img.src = article.authorPhoto
